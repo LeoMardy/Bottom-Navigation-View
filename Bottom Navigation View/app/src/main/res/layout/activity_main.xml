@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_Container"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:text="This is Acitvity"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+                android:textSize="30sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:text="Go to Stories"
+                android:id="@+id/acivityButton"
+                android:layout_marginTop="300dp"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/item_corner"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="#F50057"
+            app:itemTextColor="@color/white"
+
+            app:menu="@menu/item_menu" />
+
+</RelativeLayout>
